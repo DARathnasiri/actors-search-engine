@@ -257,7 +257,7 @@ npm install
 * Search by birth place in advanced search<br/>
 *eg:*<br/>
 > කොළඹ<br/>
-> පෙබරවාරි
+> ලන්ඩන්
 
 * Search with more filters in advanced search
 
