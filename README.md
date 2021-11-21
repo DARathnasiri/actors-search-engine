@@ -152,26 +152,25 @@ PUT actors_si/_mappings/
   }
 }
 ```
-2. Run `App.py` file in `bulk-data-insert` folder to insert the actor details data into the elasticsearch index.<br/>
-Following command can be used for run the `App.py`
+2. Run the Elasticsearch instance.
+3. Execute following commands in `bulk-data-insert` folder
 ```
+pip install elasticsearch
 python App.py
 ```
-*You may want to install required python packages. Packages can be install with pip install*
 
 ### Setting Up Backend
-2. Run `App.py` file in `backend` folder.<br/>
-Following command can be used for run the `App.py`
+1. Execute following commands in `backend` folder
 ```
-python App.py
+pip install flask
+pip install flask_cors
+pip install sinling
 ```
-*You may want to install required python packages. Packages can be install with pip install*
 
 ### Setting Up Frontend
-1. Go inside into `frontend` folder and execute following commands in the terminal.
+1. Execute following commands in `frontend` folder
 ```
 npm install
-npm start
 ```
 
 ## Running the Project
@@ -263,7 +262,7 @@ npm start
 * Search with more filters in advanced search
 
 ## Additional Details
-The project utilizes the below query types in Elasticsearch.
+Below query types in Elasticsearch is used in the project.
 * [Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html)
 * [Boolean query with must](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html)
 * [Boolean query with should](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html)
